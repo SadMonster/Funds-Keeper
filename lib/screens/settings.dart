@@ -5,15 +5,10 @@ class Settings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings here'),
+        title: Text('Settings'),
       ),
       body: Center(
-        child: RaisedButton(
-          child: Text('Launch screen'),
-          onPressed: () {
-            // Navigate to second screen when tapped!
-          },
-        ),
+        child: Text('No settings for now')
       ),
     );
   }

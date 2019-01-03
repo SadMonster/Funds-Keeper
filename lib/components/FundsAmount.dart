@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-EdgeInsets defInsest = EdgeInsets.all(20);
-
 class FundsAmount extends StatelessWidget {
   @override
 
@@ -10,12 +8,13 @@ class FundsAmount extends StatelessWidget {
   const FundsAmount({Key key, this.isOpened}) : super(key: key);
 
   Widget build(context) {
-    return ConstrainedBox(
-      constraints: BoxConstraints.tightFor(width: 400),
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: this.isOpened ? MediaQuery.of(context).size.height - 80 : 300,
       child: Card(
         elevation: 5,
         child: Padding(
-          padding: defInsest,
+          padding: EdgeInsets.all(10),
           child: Column(
             children: <Widget>[
               Text('Funds Amount'),
